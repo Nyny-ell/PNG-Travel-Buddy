@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PNG Travel Buddy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">PNG Travel Buddy</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Discover Amazing Places</h1>
+    <p>Explore the world's most beautiful destinations</p>
+    <button class="cta-button">Start Your Journey</button>
+  </section>
+
+  <section id="destinations" class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <img src="attached_assets/pom1.jpeg" alt="Port Moresby">
+        <h3>Port Moresby</h3>
+        <p>The city of lights and romance</p>
+      </div>
+      <div class="destination-card">
+        <img src="attached_assets/nip1.jpeg" alt="New Ireland"">
+        <h3>New Ireland</h3>
+        <p>The paradise gateaway</p>
+      </div>
+      <div class="destination-card">
+        <img src="attached_assets/enb1.jpeg" alt="ENB">
+        <h3>East New Britain</h3>
+        <p>Lava meets white sandy beach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="map-section" class="map-section">
+    <h2>Explore Our Destinations</h2>
+    <div id="map"></div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <div class="social-share">
+      <h3>Share Your Journey</h3>
+      <div class="share-buttons">
+        <button onclick="share('facebook')">Facebook</button>
+        <button onclick="share('twitter')">Twitter</button>
+        <button onclick="share('instagram')">Instagram</button>
+      </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PNG Travel Buddy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
